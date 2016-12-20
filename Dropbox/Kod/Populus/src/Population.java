@@ -16,7 +16,6 @@ public class Population {
 		//populationGrowth = (food.getTotalFood()*0.25 + housing) * health;
 		populationGrowth = (food.getSupply() / totalPopulation)/10000;
 		expectedPopulation += totalPopulation * populationGrowth;
-		System.out.println("Growth = "+populationGrowth);
 		totalPopulation = expectedPopulation;
 	}
 
